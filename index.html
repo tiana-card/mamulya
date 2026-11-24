@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Мамуля, это всё для тебя ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&family=Parisienne&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="music-control">
+        <button id="musicButton" aria-label="Включить музыку">
+            ♫
+        </button>
+    </div>
+
+    <audio id="backgroundMusic" loop preload="auto">
+    <source src="audio/music.mp3" type="audio/mpeg">
+    </audio>
+
+    <main class="intro-screen" id="introScreen">
+
+        <div class="flower flower-one">✿</div>
+        <div class="flower flower-two">❀</div>
+        <div class="flower flower-three">✿</div>
+        <div class="flower flower-four">❀</div>
+
+        <div class="intro-content">
+
+            <p class="small-heading">
+                С ДНЁМ МАТЕРИ
+            </p>
+
+            <h1>
+                Для моей
+                <span>мамули</span>
+            </h1>
+
+            <div class="heart-divider">
+                <span></span>
+                ♡
+                <span></span>
+            </div>
+
+            <p class="intro-description">
+                Я приготовила для тебя кое-что особенное...
+                
+
+                Это маленькая история о нашей любви.
+            </p>
+
+            <div class="envelope-container" id="envelope">
+
+                <div class="envelope">
+
+                    <div class="envelope-back"></div>
+
+                    <div class="letter">
+                        <span>С любовью ♡</span>
+                    </div>
+
+                    <div class="envelope-front"></div>
+
+                    <div class="envelope-flap"></div>
+
+                    <div class="envelope-heart">♡</div>
+
+                </div>
+
+            </div>
+
+            <button class="open-button" id="openButton">
+                Открыть мой сюрприз
+                <span>♡</span>
+            </button>
+
+            <p class="bottom-note">
+                Сделано с огромной любовью
+            </p>
+
+        </div>
+
+    </main>
+    <!-- ЭКРАН ФОТОАЛЬБОМА -->
+
+<section class="album-screen" id="albumScreen" hidden>
+
+    <div class="album-decoration">✿</div>
+
+    <div class="album-content">
+
+        <p class="small-heading">НАША ИСТОРИЯ</p>
+
+        <h2 class="album-title">
+            Сколько всего
+            <span>мы пережили вместе...</span>
+        </h2>
+
+        <div class="heart-divider">
+            <span></span>
+            ♡
+            <span></span>
+        </div>
+
+        <p class="album-description">
+            Мамуля, давай немного вспомним,
+            как всё начиналось...
+            
+
+            Каждая фотография хранит частичку
+            нашей с тобой истории.
+        </p>
+
+        <!-- ПЕРВАЯ ГЛАВА -->
+
+        <div class="album-chapter">
+            <p class="chapter-number">ГЛАВА ПЕРВАЯ</p>
+            <h3>Когда я была совсем маленькой</h3>
+            <p>С тех самых первых мгновений...</p>
+        </div>
+
+        <div class="photo-grid">
+
+            <div class="photo-card">
+                <img src="images/photos/01.jpg"
+                    alt="Наше воспоминание"
+                    loading="lazy"
+                    decoding="async"
+                >
+                <p>Самое начало нашей истории ♡</p>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/photos/02.jpg" alt="Наше воспоминание 2">
+                <p>Маленькая я и моя мамуля</p>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/photos/03.jpg" alt="Наше воспоминание 3">
+                <p>Столько тепла в одном кадре, хоть на улице и снег</p>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/photos/04.jpg" alt="Наше воспоминание 4">
+                <p>Селфи на память ♡</p>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/photos/05.jpg" alt="Наше воспоминание 5">
+                <p>Красивые мы</p>
+            </div>
+
+        </div>
+
+        <!-- ВТОРАЯ ГЛАВА -->
+
+        <div class="album-chapter">
+            <p class="chapter-number">ГЛАВА ВТОРАЯ</p>
+            <h3>Мое взросление. Спасибо, что ты всегда рядом!</h3>
+            <p>Самый счастливый период моей жизни!</p>
+        </div>
+
+        <div class="photo-grid">
+
+            <div class="photo-card">
+                <img src="images/photos/06.jpg" alt="Наше воспоминание 6">
+                <p>Счастливые моменты вместе, хоть я и недовольна</p>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/photos/07.jpg" alt="Наше воспоминание 7">
+                <p>Выпускной 9 класс</p>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/photos/08.jpg" alt="Наше воспоминание 8">
+                <p>И снова мы вдвоём ♡</p>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/photos/09.jpg" alt="Наше воспоминание 9">
+                <p>Сочиииии! Поехали еще куда-нибудь вместе?</p>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/photos/10.jpg" alt="Наше воспоминание 10">
+                <p>Твоя любовь — это целый мир</p>
+            </div>
+
+        </div>
+
+        <!-- ТРЕТЬЯ ГЛАВА -->
+
+        <div class="album-chapter">
+            <p class="chapter-number">ГЛАВА ТРЕТЬЯ</p>
+            <h3>Как быстро летит время</h3>
+            <p>Я росла, а твоя любовь всегда была рядом</p>
+        </div>
+
+        <div class="photo-grid">
+
+            <div class="photo-card">
+                <img src="images/photos/11.jpg" alt="Наше воспоминание 11">
+                <p>Мокренькие кисоньки танцуют</p>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/photos/12.jpg" alt="Наше воспоминание 12">
+                <p>Помни, что ты любимая мама не только для меня!</p>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/photos/13.jpg" alt="Наше воспоминание 13">
+                <p>На пляжууу</p>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/photos/14.jpg" alt="Наше воспоминание 14">
+                <p>У нас даже одни очки на двоих</p>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/photos/15.jpg" alt="Наше воспоминание 15">
+                <p>Театр мод собственной персоной</p>
+            </div>
+
+        </div>
+
+        <!-- ЧЕТВЁРТАЯ ГЛАВА -->
+
+        <div class="album-chapter">
+            <p class="chapter-number">ГЛАВА ЧЕТВЁРТАЯ</p>
+            <h3>И сегодня мы вместе</h3>
+            <p>И сколько бы лет ни прошло...</p>
+        </div>
+
+        <div class="photo-grid">
+
+            <div class="photo-card">
+                <img src="images/photos/16.jpg" alt="Наше воспоминание 16">
+                <p>Это не мы слушали Jony, это он нас слушал ♡</p>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/photos/17.jpg" alt="Наше воспоминание 17">
+                <p>Моя любимая фотка!</p>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/photos/18.jpg" alt="Наше воспоминание 18">
+                <p>Ещё одно наше воспоминание</p>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/photos/19.jpg" alt="Наше воспоминание 19">
+                <p>И пусть таких моментов будет больше</p>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/photos/20.jpg" alt="Наше воспоминание 20">
+                <p>Моя история всегда начинается с тебя ♡</p>
+            </div>
+
+        </div>
+
+        <div class="album-ending">
+            <span>♡</span>
+            <h3>Знаешь, мамуля...</h3>
+            <p>
+                Как бы быстро ни летело время,
+                сколько бы лет мне ни исполнилось,
+                я всегда буду твоим маленьким котенком.
+            </p>
+        </div>
+
+        <button class="open-button" id="nextChapterButton">
+            Дальше — кое-что особенное ♡
+        </button>
+
+    </div>
+
+</section>
+<!-- ГЛАВА С МАМОНТЁНКОМ -->
+
+<section class="cartoon-screen" id="cartoonScreen" hidden>
+
+    <div class="cartoon-content">
+
+        <p class="small-heading">ОДНО ОСОБЕННОЕ ВОСПОМИНАНИЕ</p>
+
+        <h2 class="cartoon-title">
+            Мамуля, помнишь
+            <span>эту песенку?</span>
+        </h2>
+
+        <div class="heart-divider">
+            <span></span>
+            ♡
+            <span></span>
+        </div>
+
+        <p class="cartoon-intro">
+            Есть один мультфильм, который всегда
+            будет ассоциироваться у меня с тобой...
+        </p>
+
+        <div class="video-frame">
+
+            <video
+                id="mammothVideo"
+                controls
+                playsinline
+                preload="metadata"
+                poster=""
+            >
+                <source
+                    src="videos/mamontenok.mp4"
+                    type="video/mp4"
+                >
+
+                Твой браузер не поддерживает воспроизведение видео.
+            </video>
+
+        </div>
+
+        <p class="video-caption">
+            Маленькая частичка нашего детства ♡
+        </p>
+
+        <div class="cartoon-letter">
+
+            <span class="letter-heart">♡</span>
+
+            <h3>Знаешь, почему я так люблю этот мультик?</h3>
+
+            <p>
+                Потому что он всегда ассоциируется у меня с тобой.
+            </p>
+
+            <p>
+                Я до сих пор не могу спокойно слушать эту песню.
+                Каждый раз наворачиваются слёзы, потому что именно
+                ты когда-то пела её мне на ночь, как колыбельную.
+            </p>
+
+            <p>
+                И сколько бы лет мне ни было, услышав эту мелодию,
+                я снова становлюсь той маленькой девочкой,
+                которую мама укладывает спать и поёт ей
+                самую родную песенку.
+            </p>
+
+            <p>
+                Спасибо тебе за это воспоминание.
+                Я очень тебя люблю, мамуля.
+            </p>
+
+            <span class="letter-heart">♡</span>
+
+        </div>
+
+        <button class="open-button" id="letterButton">
+            А теперь самое главное...
+            <span>♡</span>
+        </button>
+
+    </div>
+
+</section>
+<section class="letter-screen" id="letterScreen" hidden>
+    <div class="letter-paper">
+
+        <p class="small-heading">САМЫЕ ВАЖНЫЕ СЛОВА</p>
+
+        <div class="letter-decoration">♡</div>
+
+        <h2 class="letter-title">
+            Моей любимой<br>
+            <span>мамочке</span>
+        </h2>
+
+        <div class="heart-divider">
+            <span></span>♡<span></span>
+        </div>
+
+        <div class="letter-text">
+            <p>Мамуля,</p>
+
+            <p>
+                Я не знаю, с каких слов начать, потому что никакие слова
+                не смогут передать, насколько сильно я тебя люблю
+                и как сильно ценю всё, что ты для меня делаешь.
+            </p>
+
+            <p>
+                Спасибо тебе за твою заботу, за поддержку, за терпение,
+                за тёплые объятия и за то, что ты всегда рядом.
+                За все бессонные ночи, переживания, добрые слова
+                и моменты, когда ты просто была рядом, даже когда
+                я ничего не просила.
+            </p>
+
+            <p>
+                Сколько бы мне ни было лет, я всегда буду твоей
+                маленькой дочкой. И мне очень хочется, чтобы ты
+                всегда чувствовала, как сильно ты мне нужна.
+            </p>
+
+            <p>
+                Я хочу, чтобы ты чаще улыбалась, меньше переживала,
+                берегла себя и никогда не сомневалась в том,
+                что ты самая лучшая мама на свете.
+            </p>
+
+            <p>
+                Спасибо за моё детство, за воспоминания, за любовь
+                и за то, что именно ты — моя мама.
+            </p>
+        </div>
+
+        <div class="letter-ending">
+            <p>Я бесконечно тебя люблю!</p>
+            <span>Твоя Няшечка ♡</span>
+        </div>
+
+        <div class="letter-bottom-heart">♡</div>
+        <button class="final-button" id="finalButton">
+        И ещё кое-что для тебя... ♡
+</button>
+
+    </div>
+</section>
+<section class="final-screen" id="finalScreen" hidden>
+    <div class="floating-decor" aria-hidden="true">
+    <span>♡</span>
+    <span>✿</span>
+    <span>♥</span>
+    <span>❀</span>
+    <span>♡</span>
+    <span>✿</span>
+    <span>♥</span>
+    <span>❀</span>
+</div>
+
+    <div class="final-hearts">
+        <span>♡</span>
+        <span>♥</span>
+        <span>♡</span>
+        <span>♥</span>
+        <span>♡</span>
+        <span>♥</span>
+        <span>♡</span>
+    </div>
+
+    <div class="final-content">
+
+        <div class="final-flower">✿</div>
+
+        <p class="small-heading">ДЛЯ САМОГО РОДНОГО ЧЕЛОВЕКА</p>
+
+        <h1 class="final-title">
+            Я тебя очень<br>
+            <span>люблю, мамуля!</span>
+        </h1>
+
+        <div class="heart-divider">
+            <span></span>♡<span></span>
+        </div>
+
+        <p class="final-message">
+            Спасибо, что ты есть у меня.
+            <br>
+            Ты — моё самое большое счастье.
+        </p>
+
+        <div class="final-big-heart">♥</div>
+
+        <p class="final-signature">
+            Навсегда твой носитель радости!
+        </p>
+
+        <p class="final-date">С любовью, только для тебя ♡</p>
+
+    </div>
+
+</section>
+<!-- ОКНО УВЕЛИЧЕННОЙ ФОТОГРАФИИ -->
+
+<div class="photo-modal" id="photoModal" hidden>
+    <button class="modal-close" id="modalClose">×</button>
+    <img id="modalImage" src="" alt="Увеличенная фотография">
+    <p id="modalCaption"></p>
+</div> c
+
+    <script src="script.js"></script>
+
+</body>
+</html>
